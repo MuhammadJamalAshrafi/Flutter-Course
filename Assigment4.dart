@@ -1,12 +1,13 @@
 import "dart:io";
 
 void main() {
-  print("Enter Your Favourite Book Category to Find : ");
+  String ask = "Enter Your Favourite Book Category to Find : ";
+  print(ask);
   bool isRunning = true;
   while (isRunning) {
     String search_book_category = stdin.readLineSync()!;
     if (search_book_category == "") {
-      print("Enter Your Favourite Book Category to Find : ");
+      print(ask);
     } else {
       checkFavourite(search_book_category);
       isRunning = false;
