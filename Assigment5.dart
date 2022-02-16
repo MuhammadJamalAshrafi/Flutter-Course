@@ -30,7 +30,7 @@ void main() {
       .toList();
   final updateCompletedTasks = completedTasks
       .map(
-          (tasks) => {...tasks, "taskName": "${tasks["taskName"]}  - Complete"})
+          (tasks) => {...tasks, "taskName": "${tasks["taskName"]}  - Completed"})
       .toList();
 
   List<List<dynamic>> allLists = [
